@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> Update User</h1>
+    {{#users}}
+      <form action="/update/{{id}}" method="post">
+        <p> Username: </p> <input type="text" name="name" value={{name}}>
+        <br>
+        <p> Email: </p> <input type="email" name="email" value={{email}}>
+        <br>
+        <p> Status: </p> <input type="text" name="bio" value={{bio}}>
+        <br>
+        <button type="submit" name="submit">Update </button>
+    </form>
+    {{/users}}
+
+
+  </body>
+</html>
