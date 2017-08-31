@@ -40,7 +40,7 @@ app.get('/update/:id', function(req, res) {
       }
     })
     .then(function(users) {
-      res.render('update', {users: users});
+      res.render('update',{users: users});
     })
 });
 
