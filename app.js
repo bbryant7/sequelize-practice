@@ -66,13 +66,10 @@ newUser.save().then(function () {
 
 app.post('/delete/:idOfUserButton', function (req, res){
   models.User.destroy({where: {id: req.params.idOfUserButton}}).then(function (users) {
-            
+
                  res.redirect("/users");
              })
-     })
-
-});
-
+     });
 
 // newUser.save()
 // .then(function (newUser) {
